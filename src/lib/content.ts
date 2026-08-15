@@ -341,14 +341,14 @@ export function getDynamicNavigation(language: Locale = "en"): NavGroup[] {
       try {
         const source = fs.readFileSync(fullPath, "utf-8");
         // 提取 metadata.title
-        const titleMatch = source.match(/title:\s*["'](.+?)["']/);
-        if (titleMatch) title = titleMatch[1];
+        const titleMatch = source.match(/title:\s*(["'])(.*?)\1/);
+        if (titleMatch) title = titleMatch[2];
         // 提取 metadata.navTitle（导航短标题，可选）
-        const navTitleMatch = source.match(/navTitle:\s*["'](.+?)["']/);
-        if (navTitleMatch) navTitle = navTitleMatch[1];
+        const navTitleMatch = source.match(/navTitle:\s*(["'])(.*?)\1/);
+        if (navTitleMatch) navTitle = navTitleMatch[2];
         // 提取 metadata.badge
-        const badgeMatch = source.match(/badge:\s*["'](.+?)["']/);
-        if (badgeMatch) badge = badgeMatch[1];
+        const badgeMatch = source.match(/badge:\s*(["'])(.*?)\1/);
+        if (badgeMatch) badge = badgeMatch[2];
       } catch {
         // 读取失败用默认标题
       }

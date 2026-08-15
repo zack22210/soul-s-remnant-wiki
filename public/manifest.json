@@ -1,12 +1,23 @@
 {
   "id": "/",
-  "name": "Game Wiki Template",
-  "short_name": "Game Wiki",
-  "description": "Reusable Steam and console game wiki template.",
+  "name": "Soul's Remnant Wiki",
+  "short_name": "Soul's Remnant Wiki",
+  "description": "An independent Soul's Remnant guide covering beginner tips, skills, crafting, quests, bosses, dungeons, equipment, and multiplayer systems.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#07111f",
   "theme_color": "#07111f",
-  "icons": []
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

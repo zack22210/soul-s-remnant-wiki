@@ -91,33 +91,18 @@ export function Breadcrumbs({ items }: { items: { label: string; href?: string }
 
 export async function WikiSidebar({ locale, navGroups, currentPath }: { locale: string; navGroups: NavGroup[]; currentPath?: string }) {
   const t = await getTranslations({ locale, namespace: "shared" });
-  const nav = await getTranslations({ locale, namespace: "nav" });
   const isActive = (href: string) => currentPath === href;
   const isHomepage = !currentPath;
   return (
-    <aside className="space-y-4 sm:space-y-6 lg:sticky lg:top-24 lg:max-h-[calc(100vh-8rem)] lg:overflow-y-auto lg:pr-1">
-      {(isHomepage ? HOME_NAVIGATION_CONFIG.length > 0 : navGroups.length > 0) ? <section className="rounded-2xl border border-border bg-card/60 p-4 shadow-sm sm:p-5">
+    <aside className="space-y-4 sm:space-y-6 lg:sticky lg:top-24 lg:self-start">
+      {navGroups.length > 0 ? <section className="rounded-2xl border border-border bg-card/60 p-4 shadow-sm sm:p-5">
         <h3 className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-muted-foreground sm:mb-4">{t("wikiNavigation")}</h3>
-        {isHomepage ? (
-          <nav className="space-y-1" aria-label={t("wikiNavigation")}>
-            {HOME_NAVIGATION_CONFIG.map((item) => (
-              <Link
-                key={item.key}
-                href={localizeHref(item.path, locale)}
-                className="flex items-center justify-between rounded-lg px-2.5 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-[hsl(var(--nav-theme))]"
-              >
-                <span>{nav(item.key)}</span>
-                <ChevronRight className="h-4 w-4 text-muted-foreground" />
-              </Link>
-            ))}
-          </nav>
-        ) : (
-        <div className="space-y-4">
+        <nav className="space-y-1" aria-label={t("wikiNavigation")}>
           {navGroups.map((group) => (
             <CollapsibleNavGroup
               key={group.slug}
               title={group.title}
-              icon={<span className="grid h-4 w-4 place-items-center rounded text-[10px] font-bold text-[hsl(var(--nav-theme))]">{group.title[0]}</span>}
+              icon={isHomepage ? null : <span className="grid h-4 w-4 place-items-center rounded text-[10px] font-bold text-[hsl(var(--nav-theme))]">{group.title[0]}</span>}
               count={group.count}
               currentPath={currentPath}
             >
@@ -140,8 +125,7 @@ export async function WikiSidebar({ locale, navGroups, currentPath }: { locale: 
               </ul>
             </CollapsibleNavGroup>
           ))}
-        </div>
-        )}
+        </nav>
       </section> : null}
       <section className="rounded-2xl border border-border bg-card/60 p-4 sm:p-5">
         <h3 className="mb-3 text-sm font-bold text-foreground">{t("activeCodes")}</h3>

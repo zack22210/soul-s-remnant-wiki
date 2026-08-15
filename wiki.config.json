@@ -1,20 +1,25 @@
 {
   "schemaVersion": 1,
-  "gameName": "",
-  "topic": "",
-  "domain": null,
+  "gameName": "Soul's Remnant",
+  "topic": "soul s remnant",
+  "domain": "https://soul-s-remnant.wiki",
   "defaultLocale": "en",
   "targetArticleCount": 50,
-  "locales": ["en"],
+  "locales": [
+    "en",
+    "es",
+    "pt",
+    "id"
+  ],
   "links": {
-    "official": null,
-    "store": null,
+    "official": "https://soulsremnant.com/",
+    "store": "https://store.steampowered.com/app/3451980/Souls_Remnant/",
     "youtube": null,
-    "community": null
+    "community": "https://discord.com/servers/408526375256064001"
   },
   "media": {
-    "youtubeVideoId": null,
-    "hero": null,
+    "youtubeVideoId": "eCTr1RiESAc",
+    "hero": "/images/soul-remnant-hero-background.jpg",
     "trailerPoster": null,
     "journey": null,
     "finalCta": null

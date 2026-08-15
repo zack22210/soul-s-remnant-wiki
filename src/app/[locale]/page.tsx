@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getMessages } from "next-intl/server";
 import { JsonLd, WikiSidebar } from "@/components/site";
 import { getAllContent, getDynamicNavigation, type ContentItem, CONTENT_TYPES } from "@/lib/content";
@@ -51,8 +52,22 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
     .slice(0, 3);
 
   return (
-    <main className="mx-auto max-w-7xl px-3 py-6 sm:px-6 sm:py-10 lg:px-8">
+    <main className="relative isolate mx-auto max-w-7xl px-3 py-6 sm:px-6 sm:py-10 lg:px-8">
       <JsonLd data={webSite} />
+      {siteConfig.media.hero ? (
+        <div aria-hidden="true" className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[calc(100svh-4rem)] min-h-[44rem] w-screen -translate-x-1/2 overflow-hidden">
+          <Image
+            src={siteConfig.media.hero}
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,hsl(var(--background)/0.18)_0%,hsl(var(--background)/0.44)_58%,hsl(var(--background))_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,transparent_0%,hsl(var(--background)/0.18)_52%,hsl(var(--background)/0.7)_100%)]" />
+        </div>
+      ) : null}
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
         <div className="min-w-0">
           <HomePageClient home={messages.home} nav={messages.nav} locale={locale} articles={allArticles} recentArticles={recentArticles} />

@@ -1,4 +1,44 @@
 {
-  "categories": [],
-  "featured": []
+  "categories": [
+    {
+      "key": "guide"
+    },
+    {
+      "key": "builds"
+    },
+    {
+      "key": "dungeons"
+    },
+    {
+      "key": "systems"
+    },
+    {
+      "key": "gameplay"
+    },
+    {
+      "key": "media"
+    }
+  ],
+  "featured": [
+    {
+      "key": "guide",
+      "path": "/guide"
+    },
+    {
+      "key": "builds",
+      "path": "/builds"
+    },
+    {
+      "key": "dungeons",
+      "path": "/dungeons"
+    },
+    {
+      "key": "gameplay",
+      "path": "/gameplay"
+    },
+    {
+      "key": "systems",
+      "path": "/systems"
+    }
+  ]
 }

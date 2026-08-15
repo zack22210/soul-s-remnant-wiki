@@ -1,5 +1,95 @@
 {
-  "topic_name": "",
-  "languages": [],
-  "categories": []
+  "topic_name": "soul s remnant",
+  "languages": [
+    "es",
+    "pt",
+    "id"
+  ],
+  "categories": [
+    {
+      "category": "guide",
+      "keywords": [
+        "soul s remnant guide",
+        "soul s remnant beginner guide",
+        "soul s remnant getting started",
+        "soul s remnant tips",
+        "soul s remnant tips and tricks",
+        "soul s remnant before you play",
+        "soul s remnant progression guide",
+        "soul s remnant leveling guide",
+        "soul s remnant how to play",
+        "soul s remnant noob guide",
+        "soul s remnant worth playing",
+        "soul s remnant review",
+        "soul s remnant wiki"
+      ]
+    },
+    {
+      "category": "builds",
+      "keywords": [
+        "soul s remnant builds",
+        "soul s remnant build guide",
+        "soul s remnant skill builds",
+        "soul s remnant magic build",
+        "soul s remnant magic mastery",
+        "soul s remnant abyssal moonblade build",
+        "soul s remnant life skills",
+        "soul s remnant classes"
+      ]
+    },
+    {
+      "category": "dungeons",
+      "keywords": [
+        "soul s remnant dungeons",
+        "soul s remnant dungeon guide",
+        "soul s remnant hard mode dungeon",
+        "soul s remnant dungeon gameplay",
+        "soul s remnant mountain challenge",
+        "soul s remnant mountain challenge speedrun"
+      ]
+    },
+    {
+      "category": "systems",
+      "keywords": [
+        "soul s remnant trading",
+        "soul s remnant vending",
+        "soul s remnant player trade",
+        "soul s remnant multiplayer",
+        "soul s remnant play with friends",
+        "soul s remnant like maplestory",
+        "soul s remnant discord",
+        "soul s remnant reddit",
+        "soul s remnant patreon"
+      ]
+    },
+    {
+      "category": "gameplay",
+      "keywords": [
+        "soul s remnant gameplay",
+        "soul s remnant gameplay first look",
+        "soul s remnant launch day",
+        "soul s remnant early access",
+        "soul s remnant free to play",
+        "soul s remnant pc",
+        "soul s remnant online",
+        "soul s remnant release date",
+        "soul s remnant mmo",
+        "soul s remnant steam"
+      ]
+    },
+    {
+      "category": "media",
+      "keywords": [
+        "soul s remnant trailer",
+        "soul s remnant official trailer",
+        "soul s remnant 2025 trailer",
+        "soul s remnant soundtrack",
+        "soul s remnant ost",
+        "soul s remnant season 1 trailer",
+        "soul s remnant playtest",
+        "soul s remnant playtest trailer",
+        "soul s remnant playtest gameplay"
+      ]
+    }
+  ]
 }

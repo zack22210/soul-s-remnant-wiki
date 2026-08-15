@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { useId, useState } from "react";
+import { ChevronRight } from "lucide-react";
 
 interface CollapsibleNavGroupProps {
   title: string;
@@ -16,19 +16,25 @@ export function CollapsibleNavGroup({ title, icon, count, defaultOpen, currentPa
   // Auto-open if currentPath matches a link in this group
   const shouldOpen = defaultOpen ?? (currentPath ? hasMatchingLink(children, currentPath) : false);
   const [open, setOpen] = useState(shouldOpen);
+  const contentId = useId();
 
   return (
     <div>
       <button
-        onClick={() => setOpen(!open)}
-        className="mb-2 flex w-full items-center gap-2 text-sm font-semibold text-foreground"
+        type="button"
+        aria-expanded={open}
+        aria-controls={contentId}
+        onClick={() => setOpen((current) => !current)}
+        className="group flex min-h-10 w-full items-center gap-2 rounded-lg px-2.5 py-2 text-left text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-[hsl(var(--nav-theme))] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         {icon}
-        <span>{title}</span>
-        {count !== undefined && <span className="ml-1 text-xs text-muted-foreground">({count})</span>}
-        <ChevronDown className={`ml-auto h-4 w-4 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
+        <span className="min-w-0 flex-1">{title}</span>
+        {count !== undefined && <span className="text-xs font-medium tabular-nums text-muted-foreground">{count}</span>}
+        <ChevronRight className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 ${open ? "rotate-90" : ""}`} />
       </button>
-      {open && children}
+      <div id={contentId} hidden={!open} className="mt-1 pl-2">
+        {children}
+      </div>
     </div>
   );
 }

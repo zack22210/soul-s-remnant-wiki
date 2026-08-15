@@ -1,3 +1,8 @@
 {
-  "locales": ["en"]
+  "locales": [
+    "en",
+    "es",
+    "pt",
+    "id"
+  ]
 }

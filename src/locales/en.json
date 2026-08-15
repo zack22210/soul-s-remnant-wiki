@@ -1,69 +1,241 @@
 {
   "site": {
-    "name": "Game Wiki Template",
-    "shortName": "Game Wiki",
+    "name": "Soul's Remnant Wiki",
+    "shortName": "Soul's Remnant Wiki",
     "tagline": "Independent Player Guide",
-    "description": "A reusable fan-made guide template for Steam and console games.",
-    "legalNotice": "Independent fan wiki. Not affiliated with a game developer, publisher, storefront, or platform holder."
+    "description": "An independent Soul's Remnant guide covering beginner tips, skills, crafting, quests, bosses, dungeons, equipment, and multiplayer systems.",
+    "legalNotice": "Independent fan wiki. Not affiliated with Chaomoon or the creators and publishers of Soul's Remnant."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "builds": "Builds",
+    "dungeons": "Dungeons",
+    "systems": "Systems",
+    "gameplay": "Gameplay",
+    "media": "Media"
+  },
   "home": {
     "meta": {
-      "title": "Game Wiki Template",
-      "description": "Configure this template with a Steam or console game before publishing."
+      "title": "Soul's Remnant Wiki - Guides, Skills & Crafting",
+      "description": "Independent Soul's Remnant guides for beginners, skills, crafting, quests, equipment, bosses, dungeons, and the game's social MMO systems."
     },
     "hero": {
-      "eyebrow": "Template ready",
-      "title": "Build your next game wiki",
-      "description": "Add a game topic and raw search keywords, review the generated content plan, then let Seoscout build the article library.",
-      "stats": [],
-      "primaryCta": "Read the setup guide",
-      "primaryHref": "/about",
-      "videoLabel": "Official game media"
+      "eyebrow": "Independent Player Guide",
+      "title": "Soul's Remnant Wiki",
+      "description": "Explore practical guides for Soul's Remnant, a free-to-play 2D platformer MMORPG by Chaomoon. Learn its classless skill system, crafting, gathering, quests, dungeons, bosses, guilds, and player-driven features.",
+      "stats": [
+        "Free to play",
+        "2D platformer MMORPG",
+        "Early Access on Steam"
+      ],
+      "primaryCta": "Read the beginner guide",
+      "primaryHref": "/guide/soul-s-remnant-beginners-guide",
+      "videoLabel": "Official Soul's Remnant media"
     },
     "updates": {
       "title": "Recent updates",
       "browse": "Browse all guides"
     },
     "start": {
-      "title": "Start here",
-      "imageCaption": "Game-specific artwork will appear after the asset review.",
-      "cards": []
+      "title": "Start your Soul's Remnant journey",
+      "imageCaption": "Begin exploring Soul's Remnant with a spoiler-conscious introduction to its systems.",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Learn the basics",
+          "description": "Understand the controls, progression loop, exploration, parties, and what to prioritize when starting out."
+        },
+        {
+          "number": "2",
+          "title": "Shape your character",
+          "description": "Use the classless skill system and character stats to develop a playstyle without choosing a fixed class."
+        },
+        {
+          "number": "3",
+          "title": "Explore together",
+          "description": "Prepare for party play, dungeons, bosses, guild systems, and the game's player-driven economy."
+        }
+      ]
     },
     "popular": {
       "title": "Popular guides",
       "quickLinks": []
     },
     "aboutGame": {
-      "title": "About this wiki",
+      "title": "What is Soul's Remnant?",
       "paragraphs": [
-        "This repository is a reusable foundation for independent Steam and console game guides.",
-        "Game-specific claims, navigation, languages, and media are added only after research and review."
+        "Soul's Remnant is a free-to-play 2D platformer MMORPG developed and published by Chaomoon, with an emphasis on social gameplay and exploration.",
+        "Its advertised features include a classless skill system, character stats, equipment upgrades, quests, crafting and gathering, guilds, housing, player shops, dungeons, bosses, and a large world with secrets to discover."
       ],
-      "stats": [],
-      "cta": "Browse guides"
+      "stats": [
+        {
+          "label": "Developer",
+          "value": "Chaomoon"
+        },
+        {
+          "label": "Genre",
+          "value": "2D platformer MMORPG"
+        },
+        {
+          "label": "Availability",
+          "value": "Free to play on Steam"
+        }
+      ],
+      "cta": "Explore all guides"
     },
     "browseTopics": {
       "title": "Browse topics",
       "description": "Topic categories appear after the keyword plan is approved."
     },
     "explore": {
-      "title": "Player guides",
-      "description": "Evidence-backed guide modules appear here after preparation.",
+      "title": "Soul's Remnant Guides",
+      "description": "Browse focused guides to the game's progression, skills, equipment, crafting, quests, combat encounters, and multiplayer systems.",
       "readFullGuide": "Read full guide",
-      "modules": []
+      "modules": [
+        {
+          "name": "Beginner Guides",
+          "description": "Start with spoiler-conscious help for controls, progression, exploration, and playing with others.",
+          "href": "/guide",
+          "displayType": "step-by-step",
+          "references": [
+            "https://soulsremnant.com/",
+            "https://store.steampowered.com/app/3451980/Souls_Remnant/"
+          ]
+        },
+        {
+          "name": "Builds and Life Skills",
+          "description": "Explore the classless skill system, magic progression, named builds, and the game's non-combat life skills.",
+          "href": "/builds",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Classless skills"
+            },
+            {
+              "label": "Magic mastery"
+            },
+            {
+              "label": "Life skills"
+            }
+          ],
+          "references": [
+            "https://soulsremnant.com/",
+            "https://store.steampowered.com/app/3451980/Souls_Remnant/"
+          ]
+        },
+        {
+          "name": "Dungeons and Challenges",
+          "description": "Prepare for regular and hard-mode dungeon runs, cooperative encounters, and the Mountain Challenge.",
+          "href": "/dungeons",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Dungeon runs"
+            },
+            {
+              "label": "Hard mode"
+            },
+            {
+              "label": "Mountain Challenge"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/3451980/Souls_Remnant/"
+          ]
+        },
+        {
+          "name": "Gameplay and Early Access",
+          "description": "See what the launch-day experience offers and whether this free-to-play indie MMORPG fits your play style.",
+          "href": "/gameplay",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "First look"
+            },
+            {
+              "label": "Early Access"
+            },
+            {
+              "label": "Free to play"
+            }
+          ],
+          "references": [
+            "https://soulsremnant.com/",
+            "https://store.steampowered.com/app/3451980/Souls_Remnant/"
+          ]
+        },
+        {
+          "name": "Trading and Multiplayer",
+          "description": "Learn about vending, player trading, parties, and the social systems behind the player-driven MMO experience.",
+          "href": "/systems",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Trading"
+            },
+            {
+              "label": "Vending"
+            },
+            {
+              "label": "Playing together"
+            }
+          ],
+          "references": [
+            "https://store.steampowered.com/app/3451980/Souls_Remnant/",
+            "https://discord.com/servers/408526375256064001"
+          ]
+        },
+        {
+          "name": "Trailers and Soundtrack",
+          "description": "Browse official trailers, playtest-era media, release coverage, and the Soul's Remnant soundtrack.",
+          "href": "/media",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Official trailers"
+            },
+            {
+              "label": "Playtest archive"
+            },
+            {
+              "label": "Soundtrack"
+            }
+          ],
+          "references": [
+            "https://soulsremnant.com/",
+            "https://chaomoon.bandcamp.com/"
+          ]
+        }
+      ]
     },
     "faq": {
       "title": "Frequently asked questions",
-      "description": "Game-specific answers appear after research.",
-      "items": []
+      "description": "Quick, source-backed answers about Soul's Remnant.",
+      "items": [
+        {
+          "question": "What kind of game is Soul's Remnant?",
+          "answer": "It is a free-to-play 2D platformer MMORPG focused on social play and exploration."
+        },
+        {
+          "question": "Does Soul's Remnant use fixed character classes?",
+          "answer": "No. The official description highlights a classless system that lets players customize skills and character stats."
+        },
+        {
+          "question": "Who develops Soul's Remnant?",
+          "answer": "Soul's Remnant is developed and published by the small indie team Chaomoon."
+        },
+        {
+          "question": "Where can I play Soul's Remnant?",
+          "answer": "The game is available free to play through its official Steam store page."
+        }
+      ]
     },
     "finalCta": {
-      "title": "Ready to prepare a new wiki?",
-      "description": "Fill the template inputs, review the keyword plan, and complete the required assets before generating articles.",
-      "primary": "View setup details",
-      "primaryHref": "/about",
-      "secondary": ""
+      "title": "Begin your Soul's Remnant adventure",
+      "description": "Start with the beginner guide, then explore focused references for the systems and activities you encounter.",
+      "primary": "Read the beginner guide",
+      "primaryHref": "/guide/soul-s-remnant-beginners-guide",
+      "secondary": "View on Steam"
     }
   },
   "shared": {
@@ -91,14 +263,14 @@
     "noGuidesAvailable": "No guides are available yet. Complete the preparation workflow first."
   },
   "footer": {
-    "aboutTitle": "Game Wiki Template",
-    "about": "A reusable foundation for independent Steam and console game guides.",
+    "aboutTitle": "Soul's Remnant Wiki",
+    "about": "An independent, fan-made guide to Soul's Remnant for players seeking practical and source-backed help.",
     "quickLinks": "Quick links",
     "guides": "Guides",
     "legal": "Legal",
-    "copyright": "Independent fan site. Game rights belong to their respective owners.",
-    "description": "Evidence-backed guides for Steam and console players.",
-    "playGame": "Official store",
+    "copyright": "Independent fan site. Soul's Remnant and its assets belong to their respective rights holders.",
+    "description": "Guides for the classless skills, crafting, quests, equipment, dungeons, bosses, and social systems in Soul's Remnant.",
+    "playGame": "Play Soul's Remnant on Steam",
     "officialDiscord": "Official community",
     "officialYoutube": "Official YouTube",
     "communityGroup": "Community hub",
@@ -109,5 +281,29 @@
     "winStreakGuides": "About this wiki",
     "privacyPolicy": "Privacy policy",
     "termsOfService": "Terms of service"
+  },
+  "guide": {
+    "overviewTitle": "Guide",
+    "overviewDescription": "Browse guide articles for Soul's Remnant."
+  },
+  "builds": {
+    "overviewTitle": "Builds",
+    "overviewDescription": "Browse builds articles for Soul's Remnant."
+  },
+  "dungeons": {
+    "overviewTitle": "Dungeons",
+    "overviewDescription": "Browse dungeons articles for Soul's Remnant."
+  },
+  "systems": {
+    "overviewTitle": "Systems",
+    "overviewDescription": "Browse systems articles for Soul's Remnant."
+  },
+  "gameplay": {
+    "overviewTitle": "Gameplay",
+    "overviewDescription": "Browse gameplay articles for Soul's Remnant."
+  },
+  "media": {
+    "overviewTitle": "Media",
+    "overviewDescription": "Browse media articles for Soul's Remnant."
   }
 }
