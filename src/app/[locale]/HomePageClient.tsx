@@ -27,12 +27,13 @@ type Home = {
     description: string;
     readFullGuide: string;
     modules: Array<{
-      order: number;
+      order?: number;
       name: string;
       description: string;
       href: string;
-      displayType: "code-cards" | "step-by-step" | "tier-grid" | "card-list";
-      highlights: Array<{ label: string; detail: string; badge?: string }>;
+      displayType: string;
+      highlights?: Array<{ label: string; detail?: string; badge?: string }>;
+      references?: string[];
     }>;
   };
   faq: { title: string; description: string; items: Array<{ question: string; answer: string }> };
@@ -222,21 +223,26 @@ export default function HomePageClient({ home, nav, locale, articles, recentArti
 
           {/* Quick nav pills */}
           <div className="mobile-scroll-x mt-4 flex flex-nowrap gap-2 pb-1 sm:mt-5 sm:flex-wrap sm:pb-0">
-            {home.explore.modules.map((mod) => (
+            {home.explore.modules.map((mod, index) => {
+              const moduleOrder = mod.order ?? index + 1;
+              return (
               <a
-                key={mod.order}
-                href={`#explore-${mod.order}`}
+                key={moduleOrder}
+                href={`#explore-${moduleOrder}`}
                 className="shrink-0 rounded-full border border-border bg-card/70 px-3.5 py-1.5 text-sm text-muted-foreground transition hover:border-[hsl(var(--nav-theme-light))] hover:text-[hsl(var(--nav-theme))]"
               >
                 {mod.name}
               </a>
-            ))}
+              );
+            })}
           </div>
 
           {/* Stacked module content sections */}
           <div className="mt-6 space-y-4 sm:mt-8 sm:space-y-6">
-            {home.explore.modules.map((mod) => (
-                <div id={`explore-${mod.order}`} key={mod.order} className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-card/70">
+            {home.explore.modules.map((mod, index) => {
+              const moduleOrder = mod.order ?? index + 1;
+              return (
+                <div id={`explore-${moduleOrder}`} key={moduleOrder} className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-card/70">
                 {/* Module header */}
                 <div className="border-b border-border bg-muted/30 px-4 py-3.5 sm:px-6 sm:py-4">
                   <h3 className="text-heading-tertiary text-base font-bold sm:text-lg">{mod.name}</h3>
@@ -317,8 +323,9 @@ export default function HomePageClient({ home, nav, locale, articles, recentArti
                     {home.explore.readFullGuide} <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
                 </div>
-              </div>
-            ))}
+                </div>
+              );
+            })}
           </div>
         </section>
       )}
