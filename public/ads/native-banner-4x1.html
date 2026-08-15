@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        overflow: hidden;
+      }
+    </style>
+    <script type="text/javascript">
+      (function () {
+        var key = new URLSearchParams(location.search).get("key");
+        if (!key) return;
+        atOptions = {
+          key: key,
+          format: "iframe",
+          width: 728,
+          height: 182,
+          params: {},
+        };
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = "https://www.highperformanceformat.com/invoke.js";
+        document.head.appendChild(s);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

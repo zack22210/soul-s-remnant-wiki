@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Game Wiki Template",
+  "short_name": "Game Wiki",
+  "description": "Reusable Steam and console game wiki template.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": []
+}

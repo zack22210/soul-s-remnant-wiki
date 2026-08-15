@@ -1,0 +1,113 @@
+{
+  "site": {
+    "name": "Game Wiki Template",
+    "shortName": "Game Wiki",
+    "tagline": "Independent Player Guide",
+    "description": "A reusable fan-made guide template for Steam and console games.",
+    "legalNotice": "Independent fan wiki. Not affiliated with a game developer, publisher, storefront, or platform holder."
+  },
+  "nav": {},
+  "home": {
+    "meta": {
+      "title": "Game Wiki Template",
+      "description": "Configure this template with a Steam or console game before publishing."
+    },
+    "hero": {
+      "eyebrow": "Template ready",
+      "title": "Build your next game wiki",
+      "description": "Add a game topic and raw search keywords, review the generated content plan, then let Seoscout build the article library.",
+      "stats": [],
+      "primaryCta": "Read the setup guide",
+      "primaryHref": "/about",
+      "videoLabel": "Official game media"
+    },
+    "updates": {
+      "title": "Recent updates",
+      "browse": "Browse all guides"
+    },
+    "start": {
+      "title": "Start here",
+      "imageCaption": "Game-specific artwork will appear after the asset review.",
+      "cards": []
+    },
+    "popular": {
+      "title": "Popular guides",
+      "quickLinks": []
+    },
+    "aboutGame": {
+      "title": "About this wiki",
+      "paragraphs": [
+        "This repository is a reusable foundation for independent Steam and console game guides.",
+        "Game-specific claims, navigation, languages, and media are added only after research and review."
+      ],
+      "stats": [],
+      "cta": "Browse guides"
+    },
+    "browseTopics": {
+      "title": "Browse topics",
+      "description": "Topic categories appear after the keyword plan is approved."
+    },
+    "explore": {
+      "title": "Player guides",
+      "description": "Evidence-backed guide modules appear here after preparation.",
+      "readFullGuide": "Read full guide",
+      "modules": []
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Game-specific answers appear after research.",
+      "items": []
+    },
+    "finalCta": {
+      "title": "Ready to prepare a new wiki?",
+      "description": "Fill the template inputs, review the keyword plan, and complete the required assets before generating articles.",
+      "primary": "View setup details",
+      "primaryHref": "/about",
+      "secondary": ""
+    }
+  },
+  "shared": {
+    "wikiNavigation": "Wiki navigation",
+    "activeCodes": "Game facts",
+    "tipStartTitle": "Start with verified information",
+    "tipStartDescription": "Use official sources and direct gameplay evidence for game-specific claims.",
+    "tipChoicesTitle": "Check publication dates",
+    "tipChoicesDescription": "Live-service details, prices, and platform availability can change.",
+    "updated": "Updated",
+    "viewAllCodes": "View all guides",
+    "inThisSection": "In this section",
+    "tableOfContents": "Table of contents",
+    "sections": "sections",
+    "nextSteps": "Next steps",
+    "needHelp": "Need help?",
+    "relatedReading": "Related reading",
+    "relatedGuides": "Related guides",
+    "moreInSection": "More in",
+    "readMore": "Read more",
+    "officialMedia": "Official media",
+    "home": "Home",
+    "menu": "Menu",
+    "toggleTheme": "Toggle theme",
+    "noGuidesAvailable": "No guides are available yet. Complete the preparation workflow first."
+  },
+  "footer": {
+    "aboutTitle": "Game Wiki Template",
+    "about": "A reusable foundation for independent Steam and console game guides.",
+    "quickLinks": "Quick links",
+    "guides": "Guides",
+    "legal": "Legal",
+    "copyright": "Independent fan site. Game rights belong to their respective owners.",
+    "description": "Evidence-backed guides for Steam and console players.",
+    "playGame": "Official store",
+    "officialDiscord": "Official community",
+    "officialYoutube": "Official YouTube",
+    "communityGroup": "Community hub",
+    "vvBuilder": "Official website",
+    "beginnerGuide": "Guides",
+    "petsGuide": "Latest articles",
+    "rankedGuides": "Browse topics",
+    "winStreakGuides": "About this wiki",
+    "privacyPolicy": "Privacy policy",
+    "termsOfService": "Terms of service"
+  }
+}

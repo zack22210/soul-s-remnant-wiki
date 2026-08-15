@@ -1,0 +1,583 @@
+
+> nextjs-shadcn@0.1.0 dev
+> next dev -H 0.0.0.0 -p 3187
+
+   ▲ Next.js 15.3.7
+   - Local:        http://localhost:3187
+   - Network:      http://0.0.0.0:3187
+   - Environments: .env.development
+
+ ✓ Starting...
+ ✓ Ready in 1878ms
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 663ms (127 modules)
+ ○ Compiling /[locale]/[...slug] ...
+connect EACCES 120.232.234.33:443
+
+Retrying 1/3...
+connect EACCES 120.232.234.33:443
+
+Retrying 2/3...
+connect EACCES 120.232.234.33:443
+
+Retrying 3/3...
+Error: connect EACCES 120.232.234.33:443
+    at <unknown> (Error: connect EACCES 120.232.234.33:443) {
+  errno: -4092,
+  code: 'EACCES',
+  syscall: 'connect',
+  address: '120.232.234.33',
+  port: 443
+}
+ ⨯ Failed to download `Inter` from Google Fonts. Using fallback font instead.
+
+Failed to fetch `Inter` from Google Fonts.}
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ ✓ Compiled /[locale]/[...slug] in 9.2s (1362 modules)
+ ✓ Compiled in 427ms (479 modules)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Parsing of D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next-intl\dist\esm\production\extractor\format\index.js for build dependencies failed at 'import(t)'.
+<w> Build dependencies behind this expression are ignored and might cause incorrect cache invalidation.
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 11414ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 293ms
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 1592ms (1427 modules)
+ GET / 200 in 3341ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 145ms
+ GET / 200 in 67ms
+ GET /details/agefield-high-rock-the-school-characters 200 in 94ms
+ GET / 200 in 55ms
+ GET /guide/agefield-high-rock-the-school-true-ending 200 in 104ms
+ ✓ Compiled in 1325ms (1440 modules)
+ GET / 200 in 844ms
+ ✓ Compiled in 1734ms (1429 modules)
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 2420ms
+ GET / 200 in 672ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 691ms
+ ✓ Compiled in 235ms (516 modules)
+ GET / 200 in 186ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 194ms
+ ✓ Compiled in 912ms (1429 modules)
+ GET / 200 in 490ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 513ms
+ GET / 200 in 654ms
+ GET / 200 in 453ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\cache\webpack\server-development\1.pack.gz_' -> 'D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\cache\webpack\server-development\1.pack.gz'
+ GET / 200 in 1037ms
+ ✓ Compiled in 1275ms (1429 modules)
+ GET / 200 in 777ms
+ GET / 200 in 774ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 826ms
+ GET / 200 in 727ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 219ms
+ GET / 200 in 485ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 417ms
+ GET / 200 in 772ms
+ ✓ Compiled in 1278ms (1425 modules)
+ ⨯ Failed to generate static paths for /[locale]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/webpack/72e414a85b5ba395.webpack.hot-update.json 404 in 676ms
+ GET / 200 in 1478ms
+ GET / 200 in 1483ms
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /[locale]/[...slug]:
+[Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/css/app/layout.css?v=1786633763391 404 in 514ms
+[ResponseAborted: ]
+[ResponseAborted: ]
+ GET /_next/static/css/app/layout.css?v=1786633763951 404 in 1402ms
+[ResponseAborted: ]
+[ResponseAborted: ]
+ GET /_next/static/webpack/be0c47c31db51ac1.webpack.hot-update.json 404 in 1997ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 3127ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 200 in 2105ms
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/%5Blocale%5D/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 5.3s (1742 modules)
+ GET /_next/static/css/app/layout.css?v=1786633764188 500 in 9621ms
+ GET /_next/static/css/app/layout.css?1786633764568 500 in 7947ms
+ GET /_next/static/css/app/%5Blocale%5D/layout.css?1786633764568 500 in 7941ms
+ GET /_next/static/css/app/layout.css?1786633764570 500 in 7942ms
+ GET /_next/static/css/app/%5Blocale%5D/layout.css?1786633764571 500 in 7893ms
+ GET /_next/static/css/app/layout.css?1786633764576 500 in 7834ms
+ GET /_next/static/css/app/%5Blocale%5D/layout.css?1786633764576 500 in 7818ms
+ GET / 500 in 7936ms
+ GET /_next/static/webpack/be0c47c31db51ac1.webpack.hot-update.json 200 in 3251ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /_next/static/css/app/%5Blocale%5D/layout.css?1786633771572 200 in 1996ms
+ GET /_next/static/css/app/layout.css?1786633771572 200 in 1998ms
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ GET /_next/static/css/app/layout.css?1786633764571 500 in 495ms
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/_next/static/css/app/layout.css'
+}
+ GET /_next/static/css/app/layout.css?1786633764577 500 in 1944ms
+ GET /_next/static/css/app/layout.css?v=1786633764612 500 in 1943ms
+ GET /_next/static/css/app/layout.css?1786633764572 500 in 1911ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 500 in 1903ms
+ GET /_next/static/css/app/%5Blocale%5D/layout.css?1786633764572 500 in 1897ms
+ GET /_next/static/css/app/layout.css?v=1786633764614 500 in 1379ms
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en/guide/agefield-high-rock-the-school-haunted-house-mission'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en/guide/agefield-high-rock-the-school-haunted-house-mission'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en'
+}
+ GET /_next/static/css/app/layout.css?v=1786633764609 500 in 1973ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 500 in 1916ms
+ GET / 500 in 1968ms
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en/guide/agefield-high-rock-the-school-haunted-house-mission'
+}
+ GET / 500 in 2170ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 500 in 2436ms
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/lucide-react.js'
+Require stack:
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\webpack-runtime.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\.next\server\app\[locale]\[...slug]\page.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\require.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\load-components.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\build\utils.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\server\dev\static-paths-worker.js
+- D:\Web出海\roblox模板\agefield-high-rock-the-school-wiki\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/en/guide/agefield-high-rock-the-school-haunted-house-mission'
+}
+ GET / 500 in 2010ms
+ GET /guide/agefield-high-rock-the-school-haunted-house-mission 500 in 1727ms

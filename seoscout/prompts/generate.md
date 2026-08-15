@@ -1,0 +1,1 @@
+Run `bun run wiki:prepare`, complete the research packet and assets, then run `bun run wiki:approve` before using Seoscout. The approval step generates the game-specific article prompt from `generate.template.md`.

@@ -1,0 +1,70 @@
+{
+  "gameName": "Example Game",
+  "shortName": "Example Wiki",
+  "topic": "example game",
+  "description": "An accurate 140–160 character description of this independent player guide.",
+  "tagline": "Independent Player Guide",
+  "legalNotice": "Independent fan wiki. Not affiliated with the game's developer or publisher.",
+  "links": {
+    "official": "https://example.com",
+    "store": "https://store.steampowered.com/app/000000/example/",
+    "youtube": null,
+    "community": null
+  },
+  "media": {
+    "youtubeVideoId": null,
+    "hero": "/images/hero.webp",
+    "trailerPoster": null,
+    "journey": null,
+    "finalCta": null
+  },
+  "home": {
+    "meta": {
+      "title": "Example Game Wiki — Guides & Walkthroughs",
+      "description": "An accurate 140–160 character homepage description."
+    },
+    "hero": {
+      "eyebrow": "Independent Player Guide",
+      "title": "Example Game Wiki",
+      "description": "Two or three evidence-backed sentences.",
+      "stats": ["Release date", "Platform", "Verified game fact"],
+      "primaryCta": "Read the beginner guide",
+      "primaryHref": "/guide/example-game-beginner-guide",
+      "videoLabel": "Official game media"
+    },
+    "start": {
+      "title": "Start your Example Game journey",
+      "imageCaption": "Accurate caption for the optional journey image.",
+      "cards": [
+        { "number": "1", "title": "Beginner guide", "description": "Evidence-backed early-game help." }
+      ]
+    },
+    "aboutGame": {
+      "title": "What is Example Game?",
+      "paragraphs": ["Evidence-backed overview.", "Evidence-backed feature summary."],
+      "stats": [{ "label": "Developer", "value": "Studio" }],
+      "cta": "Explore all guides"
+    },
+    "exploreTitle": "Example Game Guides",
+    "exploreDescription": "A concise description of the approved guide collection.",
+    "faq": {
+      "title": "Frequently asked questions",
+      "description": "Quick verified answers about Example Game.",
+      "items": [{ "question": "What is Example Game?", "answer": "Verified answer." }]
+    },
+    "finalCta": {
+      "title": "Ready to play Example Game?",
+      "description": "A truthful call to continue into the guide library.",
+      "primary": "Read the beginner guide",
+      "primaryHref": "/guide/example-game-beginner-guide",
+      "secondary": "View on Steam"
+    }
+  },
+  "footer": {
+    "aboutTitle": "Example Game Wiki",
+    "about": "Independent fan-made guide description.",
+    "copyright": "Independent fan site. Game rights belong to their respective owners.",
+    "description": "Concise factual game description.",
+    "playGame": "View Example Game on Steam"
+  }
+}

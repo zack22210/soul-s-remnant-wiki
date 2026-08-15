@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+    --primary: 215 55% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 43 85% 92%;
+    --secondary-foreground: 215 55% 24%;
+    --muted: 215 18% 94%;
+    --muted-foreground: 215 14% 39%;
+    --body-foreground: 215 18% 28%;
+    --heading-secondary: 215 55% 30%;
+    --heading-tertiary: 215 26% 24%;
+    --meta-foreground: 215 14% 43%;
+    --accent: 43 80% 90%;
+    --accent-foreground: 215 55% 24%;
+    --destructive: 8 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 18% 86%;
+    --input: 215 18% 86%;
+    --ring: 215 55% 30%;
+    --radius: 0.75rem;
+    --nav-theme: 215 55% 30%;
+    --nav-theme-light: 43 91% 58%;
+    --accent-summer: 32 95% 55%;
+    --accent-spider: 0 75% 55%;
+    --chart-1: 215 55% 30%;
+    --chart-2: 43 91% 58%;
+    --chart-3: 0 75% 55%;
+    --chart-4: 221 30% 42%;
+    --chart-5: 0 0% 45%;
+    --header-height: 3.75rem;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-left: env(safe-area-inset-left, 0px);
+  }
+
+  .dark {
+    --background: 215 35% 7%;
+    --foreground: 43 20% 92%;
+    --card: 215 30% 9%;
+    --card-foreground: 0 0% 90%;
+    --popover: 215 30% 9%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 43 92% 65%;
+    --primary-foreground: 215 55% 15%;
+    --secondary: 215 25% 16%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 215 22% 15%;
+    --muted-foreground: 215 12% 68%;
+    --body-foreground: 215 16% 78%;
+    --heading-secondary: 215 65% 70%;
+    --heading-tertiary: 43 20% 88%;
+    --meta-foreground: 215 12% 66%;
+    --accent: 43 35% 20%;
+    --accent-foreground: 0 0% 92%;
+    --destructive: 8 70% 45%;
+    --destructive-foreground: 0 0% 96%;
+    --border: 215 18% 21%;
+    --input: 215 18% 21%;
+    --ring: 43 92% 65%;
+    --nav-theme: 215 65% 60%;
+    --nav-theme-light: 43 92% 65%;
+    --accent-summer: 32 95% 55%;
+    --accent-spider: 0 75% 55%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground;
+    padding-left: var(--safe-left);
+    padding-right: var(--safe-right);
+    overflow-x: clip;
+    background-image:
+      radial-gradient(circle at 14% 6%, hsl(215 72% 42% / 0.22), transparent 34rem),
+      radial-gradient(circle at 88% 10%, hsl(43 82% 50% / 0.1), transparent 27rem),
+      radial-gradient(ellipse at 50% 34%, transparent 22%, hsl(220 45% 4% / 0.42) 100%),
+      linear-gradient(180deg, hsl(215 34% 9%) 0%, hsl(215 35% 7%) 52%, hsl(220 38% 5%) 100%);
+    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 30rem 52rem at 24% 18%, hsl(215 70% 55% / 0.06), transparent 72%),
+      radial-gradient(ellipse 24rem 42rem at 78% 16%, hsl(43 85% 58% / 0.035), transparent 74%);
+    z-index: -1;
+  }
+  img,
+  video,
+  svg,
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Horizontal scroll for wide wiki tables / code on small screens */
+  .mobile-scroll-x {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .mobile-scroll-x > table {
+    min-width: 100%;
+  }
+
+  /* Sticky site header accounts for notched devices */
+  .site-header {
+    padding-top: var(--safe-top);
+  }
+
+  /* Mobile sheet / drawer scroll region */
+  .mobile-drawer {
+    padding-bottom: calc(1.5rem + var(--safe-bottom));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+@layer utilities {
+  .prose-invert { color: hsl(var(--body-foreground)); }
+
+  .text-body { color: hsl(var(--body-foreground)); }
+  .text-heading-secondary { color: hsl(var(--heading-secondary)); }
+  .text-heading-tertiary { color: hsl(var(--heading-tertiary)); }
+  .text-meta { color: hsl(var(--meta-foreground)); }
+
+  .pb-safe {
+    padding-bottom: calc(1rem + var(--safe-bottom));
+  }
+
+  .pt-safe {
+    padding-top: calc(0.75rem + var(--safe-top));
+  }
+
+  /* Prefer touch-sized hit targets without forcing desktop UI larger */
+  @media (max-width: 767px) {
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
+
+/* Trending Now auto-scroll carousel */
+@keyframes auto-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-auto-scroll {
+  animation: auto-scroll 40s linear infinite;
+}
+
+.animate-auto-scroll:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-auto-scroll {
+    animation: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Narrow phones: slightly denser type rhythm */
+@media (max-width: 379px) {
+  :root {
+    --radius: 0.65rem;
+  }
+}

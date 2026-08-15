@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "gameName": "",
+  "topic": "",
+  "domain": null,
+  "defaultLocale": "en",
+  "targetArticleCount": 50,
+  "locales": ["en"],
+  "links": {
+    "official": null,
+    "store": null,
+    "youtube": null,
+    "community": null
+  },
+  "media": {
+    "youtubeVideoId": null,
+    "hero": null,
+    "trailerPoster": null,
+    "journey": null,
+    "finalCta": null
+  }
+}
