@@ -4,7 +4,6 @@ import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { FixedSidebarAds } from "@/components/ads/fixed-sidebar-ads";
 import { JsonLd, SiteFooter, SiteHeader } from "@/components/site";
 import { routing } from "@/i18n/routing";
 import { getGameName, getSiteName, getSiteUrl, siteConfig } from "@/config/site";
@@ -64,7 +63,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={organization} />
           <SiteHeader locale={locale} />
-          <FixedSidebarAds />
           {children}
           <SiteFooter locale={locale} />
         </NextIntlClientProvider>

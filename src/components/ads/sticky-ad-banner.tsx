@@ -13,20 +13,18 @@ export function StickyAdBanner() {
   if (!isValidAdKey(MOBILE_BANNER_KEY) || dismissed) return null;
 
   return (
-    <div className="sticky top-[calc(var(--header-height)+var(--safe-top))] z-20 py-2">
-      <div className="mx-auto max-w-4xl">
-        <div className="relative overflow-hidden pr-9">
-          <button
-            type="button"
-            onClick={() => setDismissed(true)}
-            className="absolute right-0 top-0 z-10 touch-target grid place-items-center rounded-md p-1 text-muted-foreground transition hover:bg-muted hover:text-foreground"
-            aria-label="关闭广告"
-          >
-            <X className="h-4 w-4" />
-          </button>
-          <div className="mx-auto w-full max-w-[320px] sm:max-w-none">
-            <AdBanner type="banner-320x50" adKey={MOBILE_BANNER_KEY} eager />
-          </div>
+    <div className="pointer-events-none fixed bottom-[max(0.5rem,var(--safe-bottom))] left-1/2 z-50 w-[320px] max-w-full -translate-x-1/2">
+      <div className="pointer-events-auto relative w-full shadow-xl">
+        <button
+          type="button"
+          onClick={() => setDismissed(true)}
+          className="touch-target absolute right-0 top-0 z-10 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-background text-muted-foreground shadow-lg transition hover:text-foreground"
+          aria-label="Close advertisement"
+        >
+          <X className="h-4 w-4" />
+        </button>
+        <div className="overflow-hidden">
+          <AdBanner type="banner-320x50" adKey={MOBILE_BANNER_KEY} eager />
         </div>
       </div>
     </div>

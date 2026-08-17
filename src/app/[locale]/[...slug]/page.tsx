@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { getAllContent, getAllContentPaths, getContent, type ContentItem } from "@/lib/content";
 import { ArticleFooterAds } from "@/components/ads/article-footer-ads";
 import { ArticleMdxScope } from "@/components/ads/article-mdx-scope";
+import { FixedSidebarAds } from "@/components/ads/fixed-sidebar-ads";
 import { StickyAdBanner } from "@/components/ads/sticky-ad-banner";
 import { Breadcrumbs, JsonLd, PrimaryWikiNavigation, localizeHref } from "@/components/site";
 import { MoreInSection } from "@/components/article-sidebar";
@@ -145,7 +146,9 @@ async function DetailPage({ locale, contentType, slug }: { locale: Locale; conte
   const readingMinutes = estimateReadingTime(item, item.wordCount);
 
   return (
-    <main className="mx-auto max-w-7xl px-3 py-6 sm:px-6 sm:py-10 lg:px-8">
+    <>
+      <FixedSidebarAds />
+      <main className="mx-auto max-w-7xl px-3 py-6 sm:px-6 sm:py-10 lg:px-8">
       <JsonLd data={articleData} />
       <JsonLd data={breadcrumbData} />
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-10">
@@ -188,7 +191,8 @@ async function DetailPage({ locale, contentType, slug }: { locale: Locale; conte
           <MoreInSection locale={locale} title={`${messages.shared.moreInSection} ${sectionLabel}`} items={moreInSection} />
         </aside>
       </div>
-    </main>
+      </main>
+    </>
   );
 }
 
