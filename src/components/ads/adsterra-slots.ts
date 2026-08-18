@@ -20,13 +20,13 @@ export const ADSTERRA_BANNER_SLOTS = {
     key: getAdKey("BANNER_468X60"),
   },
   "160x600": {
-    html: "sidebar-160x600.html",
+    html: "banner-160x600.html",
     width: 160,
     height: 600,
     key: getAdKey("SIDEBAR_160X600"),
   },
   "160x300": {
-    html: "sidebar-160x300.html",
+    html: "banner-160x300.html",
     width: 160,
     height: 300,
     key: getAdKey("SIDEBAR_160X300"),

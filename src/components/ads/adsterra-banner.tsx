@@ -5,7 +5,7 @@ export function AdsterraBanner({ slot }: { slot: AdsterraBannerSlot }) {
   const { key, width, height, html } = ADSTERRA_BANNER_SLOTS[slot];
   if (!isValidAdKey(key)) return null;
 
-  const src = `/ads/${html}?key=${encodeURIComponent(key)}`;
+  const src = `/ads/${html}`;
 
   return (
     <div className="flex justify-center">

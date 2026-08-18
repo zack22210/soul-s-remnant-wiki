@@ -13,7 +13,9 @@ export function AdBanner({
   if (!isValidAdKey(adKey)) return null;
 
   const { html, width, height } = AD_BANNER_CONFIG[type];
-  const src = `/ads/${html}?key=${encodeURIComponent(adKey!.trim())}`;
+  const src = type === "native-banner-4x1"
+    ? `/ads/${html}?key=${encodeURIComponent(adKey!.trim())}`
+    : `/ads/${html}`;
 
   return (
     <div className="flex justify-center">
