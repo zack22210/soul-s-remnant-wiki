@@ -2,15 +2,12 @@
 
 import { useState } from "react";
 import { X } from "lucide-react";
-import { getAdKey, isValidAdKey } from "@/config/ad-keys";
 import { AdBanner } from "./ad-banner";
-
-const MOBILE_BANNER_KEY = getAdKey("MOBILE_320X50");
 
 export function StickyAdBanner() {
   const [dismissed, setDismissed] = useState(false);
 
-  if (!isValidAdKey(MOBILE_BANNER_KEY) || dismissed) return null;
+  if (dismissed) return null;
 
   return (
     <div className="pointer-events-none fixed bottom-[max(0.5rem,var(--safe-bottom))] left-1/2 z-50 w-[320px] max-w-full -translate-x-1/2">
@@ -24,7 +21,7 @@ export function StickyAdBanner() {
           <X className="h-4 w-4" />
         </button>
         <div className="overflow-hidden">
-          <AdBanner type="banner-320x50" adKey={MOBILE_BANNER_KEY} eager />
+          <AdBanner type="banner-320x50" eager />
         </div>
       </div>
     </div>

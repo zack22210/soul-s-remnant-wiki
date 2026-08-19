@@ -1,5 +1,14 @@
-import { isValidAdKey } from "@/config/ad-keys";
-import { AD_BANNER_CONFIG, type AdBannerType } from "./ad-banner-types";
+import { getBannerConfig } from "@/config/ad-config";
+import type { BannerFormat } from "@/config/ad-config";
+
+type AdBannerType = `banner-${BannerFormat}` | "sidebar-160x600" | "sidebar-160x300" | "native-banner-4x1";
+
+function resolveFormat(type: AdBannerType): BannerFormat | null {
+  if (type === "native-banner-4x1") return null;
+  if (type === "sidebar-160x600") return "160x600";
+  if (type === "sidebar-160x300") return "160x300";
+  return type.slice("banner-".length) as BannerFormat;
+}
 
 export function AdBanner({
   type,
@@ -10,19 +19,18 @@ export function AdBanner({
   adKey?: string;
   eager?: boolean;
 }) {
-  if (!isValidAdKey(adKey)) return null;
-
-  const { html, width, height } = AD_BANNER_CONFIG[type];
-  const src = type === "native-banner-4x1"
-    ? `/ads/${html}?key=${encodeURIComponent(adKey!.trim())}`
-    : `/ads/${html}`;
+  const format = resolveFormat(type);
+  const config = format ? getBannerConfig(format) : { htmlPath: "/ads/native-banner-4x1.html", width: 728, height: 182 };
+  const src = type === "native-banner-4x1" && adKey
+    ? `${config.htmlPath}?key=${encodeURIComponent(adKey.trim())}`
+    : config.htmlPath;
 
   return (
     <div className="flex justify-center">
       <iframe
         src={src}
-        width={width}
-        height={height}
+        width={config.width}
+        height={config.height}
         scrolling="no"
         style={{ border: "none" }}
         title="Advertisement"

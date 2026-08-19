@@ -1,10 +1,7 @@
-import { isValidAdKey } from "@/config/ad-keys";
 import { ADSTERRA_BANNER_SLOTS, type AdsterraBannerSlot } from "./adsterra-slots";
 
 export function AdsterraBanner({ slot }: { slot: AdsterraBannerSlot }) {
-  const { key, width, height, html } = ADSTERRA_BANNER_SLOTS[slot];
-  if (!isValidAdKey(key)) return null;
-
+  const { width, height, html } = ADSTERRA_BANNER_SLOTS[slot];
   const src = `/ads/${html}`;
 
   return (
