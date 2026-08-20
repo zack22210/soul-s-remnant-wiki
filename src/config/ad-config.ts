@@ -1,3 +1,5 @@
+import { getAdKey, isValidAdKey, type AdKeyName } from "@/config/ad-keys";
+
 export type BannerFormat = "728x90" | "300x250" | "468x60" | "160x600" | "160x300" | "320x50";
 
 export interface BannerConfig {
@@ -15,7 +17,20 @@ const BANNER_SPECS: Record<BannerFormat, BannerConfig> = {
   "320x50": { width: 320, height: 50, htmlPath: "/ads/banner-320x50.html" },
 };
 
+const BANNER_KEY_BY_FORMAT: Record<BannerFormat, AdKeyName> = {
+  "728x90": "BANNER_728X90",
+  "300x250": "BANNER_300X250",
+  "468x60": "BANNER_468X60",
+  "160x600": "SIDEBAR_160X600",
+  "160x300": "SIDEBAR_160X300",
+  "320x50": "MOBILE_320X50",
+};
+
 /** Standard banner keys are embedded in public/ads/*.html during ads:sync. */
 export function getBannerConfig(format: BannerFormat): BannerConfig {
   return BANNER_SPECS[format];
+}
+
+export function isBannerConfigured(format: BannerFormat): boolean {
+  return isValidAdKey(getAdKey(BANNER_KEY_BY_FORMAT[format]));
 }

@@ -9,7 +9,7 @@ export const AD_KEYS = {
   NATIVE_BANNER: "097a50cde275c0e88d5fc2943b8eddbd",
 } as const;
 
-type AdKeyName = keyof typeof AD_KEYS;
+export type AdKeyName = keyof typeof AD_KEYS;
 
 export function isValidAdKey(key?: string | null): boolean {
   const trimmed = key?.trim();

@@ -7,8 +7,8 @@ import { getMessages } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
 import { getAllContent, getAllContentPaths, getContent, type ContentItem } from "@/lib/content";
 import { ArticleFooterAds } from "@/components/ads/article-footer-ads";
-import { ArticleMdxScope } from "@/components/ads/article-mdx-scope";
 import { FixedSidebarAds } from "@/components/ads/fixed-sidebar-ads";
+import { InArticleMobileAd } from "@/components/ads/in-article-mobile-ad";
 import { StickyAdBanner } from "@/components/ads/sticky-ad-banner";
 import { Breadcrumbs, JsonLd, PrimaryWikiNavigation, localizeHref } from "@/components/site";
 import { MoreInSection } from "@/components/article-sidebar";
@@ -178,11 +178,10 @@ async function DetailPage({ locale, contentType, slug }: { locale: Locale; conte
             </figure>
           )}
           <MobileTOC headings={item.headings} label={tocLabel} sectionsLabel={messages.shared.sections} />
-          <ArticleMdxScope>
-            <div className="prose-invert mt-8 max-w-[72ch] sm:mt-10">
-              <item.MDXContent />
-            </div>
-          </ArticleMdxScope>
+          <InArticleMobileAd />
+          <div className="prose-invert mt-8 max-w-[72ch] sm:mt-10">
+            <item.MDXContent />
+          </div>
           <ArticleFooterAds />
           <ArticleCards locale={locale} contentType={contentType} currentSlug={slug.join("/")} relatedLabel={relatedLabel} />
         </article>

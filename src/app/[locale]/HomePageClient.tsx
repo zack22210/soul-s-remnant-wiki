@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { FixedSidebarAds } from "@/components/ads/fixed-sidebar-ads";
 import { HomeBottomAd } from "@/components/ads/home-bottom-ad";
 import { NativeBannerAd } from "@/components/ads/native-banner-ad";
 import { StickyAdBanner } from "@/components/ads/sticky-ad-banner";
@@ -53,6 +54,7 @@ function getFeaturedArticleImage(article: ContentItem) {
 export default function HomePageClient({ home, nav, locale, articles, recentArticles }: { home: Home; nav: Nav; locale: string; articles: ContentItem[]; recentArticles: ContentItem[] }) {
   return (
     <div className="space-y-10 sm:space-y-14 lg:space-y-16">
+      <FixedSidebarAds />
       <StickyAdBanner />
 
       {/* Hero Section */}

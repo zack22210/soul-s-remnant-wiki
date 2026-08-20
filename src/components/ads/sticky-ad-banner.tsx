@@ -10,7 +10,7 @@ export function StickyAdBanner() {
   if (dismissed) return null;
 
   return (
-    <div className="pointer-events-none fixed bottom-[max(0.5rem,var(--safe-bottom))] left-1/2 z-50 w-[320px] max-w-full -translate-x-1/2">
+    <div className="pointer-events-none fixed bottom-[max(0.5rem,var(--safe-bottom))] left-1/2 z-50 w-[320px] max-w-[calc(100vw-1rem)] -translate-x-1/2">
       <div className="pointer-events-auto relative w-full shadow-xl">
         <button
           type="button"
